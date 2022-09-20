@@ -1,0 +1,43 @@
+.comments {
+    @include adaptiveValue("padding-top",160 ,30 );
+    @include adaptiveValue("padding-bottom",160 ,30 );
+    // .comments__container
+
+    &__container {
+    }
+
+    // .comments__content
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+      
+    }
+
+    // .comments__decor
+
+    &__decor {
+    }
+
+    // .comments__text
+
+    &__text {
+        max-width: 700px;
+        padding-bottom: 17px;
+        @include adaptiveValue("padding-top",63 ,25 );
+        @include adaptiveValue("font-size",24 ,16 );
+        line-height: 164%;
+        font-weight:400;
+    }
+
+    // .comments__bottom
+
+    &__bottom {
+        display: flex;
+        align-items:center;
+        img{
+            padding:0  10px ;
+        }
+    }
+}

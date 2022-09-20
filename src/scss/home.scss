@@ -1,0 +1,61 @@
+//=========MAIN===========================================================================================
+.main {
+	background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
+    //@include adaptiveValue("padding-top",100 ,70 );
+    & :not(:last-child){
+        @include adaptiveValue("margin-bottom",26 ,10 );
+    }
+	// .main__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+        align-items: flex-start;
+		justify-content: center;
+        height: 100vh;
+		background: url("img/bg/main-bg.png");
+		background-repeat: no-repeat;
+		background-position: 100% 100%;
+		@media (max-width: $mobile) {
+			background:none;
+		}
+
+	}
+
+	// .main__title
+
+	&__title {
+		color: $white;
+		font-weight: 400;
+		@include adaptiveValue("font-size",80 ,50 );
+	}
+
+	// .main__subtitle
+
+	&__subtitle {
+		line-height: 147%;
+		color: $white;
+		font-weight: 400;
+		@include adaptiveValue("font-size",30 ,20 );
+	}
+
+	// .main__btn
+
+	&__btn {
+	}
+	&__img{
+		position: absolute;
+		max-height: 680px;
+		right: -10%;
+		img{
+			width: 100%;
+			object-fit: contain;
+		}
+
+	}
+}
+
+
+
+
+//====================================================================================================

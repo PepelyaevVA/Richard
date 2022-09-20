@@ -1,0 +1,41 @@
+.review {
+
+    &__items{     
+        display: flex;
+        flex-direction: column;
+        @include adaptiveValue("row-gap",160 ,20 );
+        
+    }
+    // .review__item
+
+    &__item {
+        display: flex;
+        align-items:center;   
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+        
+    }
+    &__item_reversse{
+        flex-direction: row-reverse;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+    }
+
+    // .review__text
+
+    &__text {
+        padding: 10px;
+    }
+
+    // .review__img
+
+    &__img {
+        width: 100%;
+        @include adaptiveValue("height",414 ,300 );
+
+    }
+
+}
+

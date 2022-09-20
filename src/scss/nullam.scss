@@ -1,0 +1,30 @@
+.nullam {
+    background-color:#1B1B1B;
+    background-image:  url('img/bg/tablet.png') ;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: contain;
+    
+    @include adaptiveValue("padding-top",80 ,30 );
+    & :not(:last-child){
+        @include adaptiveValue("margin-bottom",30 ,21 );
+    }
+
+
+    // .nullam__subtitle
+
+    &__subtitle {
+        text-align: center;
+    }
+
+    // .nullam__title
+
+    &__title {
+        text-align: center;
+        font-weight: 400;
+        color: $white;
+        line-height: 126%;
+        @include adaptiveValue("font-size",38 ,27 );
+        
+    }
+}

@@ -1,0 +1,37 @@
+.start {
+    background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
+    background-image:  url('img/bg/waves.png') ;
+    // .start__container
+
+    &__container {
+    }
+
+    // .start__contetn
+
+    &__contetn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include adaptiveValue("padding-top",160 ,30 );
+        @include adaptiveValue("padding-bottom",160 ,30 );
+    }
+
+    // .start__title
+
+    &__title {
+        @include adaptiveValue("font-size",38 ,26 );
+        line-height: 126px;
+        color: #FFFFFF;
+    }
+
+    // .start__btn
+
+    &__btn {
+        display: flex;
+        gap: 20px;
+        @media (max-width: $mobileSmall) {
+            flex-direction: column;
+        }
+    }
+}
+

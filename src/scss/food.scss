@@ -1,0 +1,52 @@
+.food {
+    padding: 50px 0;
+
+    // .menu__items
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+       
+        @include adaptiveValue(" row-gap", 160 ,50 );
+    }
+   
+
+    // .menu__item
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            flex: 1 1 auto;
+        }
+        
+    }
+    &__item_rev{
+        flex-direction: row-reverse;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+    }
+
+    // .menu__text
+
+    &__text {
+        padding: 20px;
+    }
+
+    // .menu__img
+
+    &__img {
+    height: 450px;
+    flex: 0 1 550px;
+     // min-height: 300px;
+    @media (max-width: $mobile) {
+        width: 300px;
+        flex: 0 1 370px;
+    }
+    }
+}
+
+

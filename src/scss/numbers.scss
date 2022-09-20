@@ -1,0 +1,45 @@
+.numbers {
+    @include adaptiveValue("padding-bottom",200 ,50 );
+    @include adaptiveValue("padding-top",160 ,30 );
+    
+ 
+
+    // .numbers__items
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+       
+
+    }
+
+    // .numbers__item
+
+    &__item {
+        flex: 1 1 25%;
+        padding: 15px;
+    }
+
+    // .numbers__title
+
+    &__title {
+        font-weight: 400;
+        //font-size: 59px;
+        @include adaptiveValue("font-size",59 ,30 );
+        line-height: 153%;
+        text-align: center;
+        color: #333333;
+    }
+
+    // .numbers__subtitle
+
+    &__subtitle {
+        font-weight: 700;
+       // font-size: 18px;
+        @include adaptiveValue("font-size",18 ,16 );
+        line-height: 133%;
+        text-align: center;
+        color: #000000;
+    }
+}

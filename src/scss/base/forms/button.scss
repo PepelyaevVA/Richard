@@ -1,0 +1,27 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-flex;
+	background: #FC0A7E;
+	border-radius: 3px;
+	padding: 20px 40px;
+	color: $white;
+	transition: 0.4s;
+	@media (any-hover: hover) {
+		&:hover {
+			background: darken(#FC0A7E, 10%)
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+	
+}
+.button_transparent{
+	background:transparent;
+	border: 1px solid #B04BB3;
+}
+.button_radius{
+	border-radius: 0 3px 3px 0;
+}
